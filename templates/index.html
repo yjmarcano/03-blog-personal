@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Blog Personal</title></head>
+<body>
+  <h1>Mi Blog</h1>
+  <a href="/nuevo">Crear nuevo post</a>
+  {% for post in posts %}
+    <article>
+      <h2>{{ post.titulo }}</h2>
+      <p>{{ post.contenido }}</p>
+    </article>
+  {% endfor %}
+</body>
+</html>
